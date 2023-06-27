@@ -26,11 +26,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/White-2 (1).png" width="200px" height="150px" alt=""></a></h1>
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/White-2 (1).png"  width="200px" height="150px" alt=""></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
+      <!-- <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -41,8 +41,10 @@
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
         <i class="fa fa-bars mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>.navbar -->
 
+      <a href="tel:+919999290149
+      "><button class="fw-bold p-2 rounded-5">Call us:9999290149 </button></a>
     </div>
   </header><!-- End Header -->
 
@@ -58,8 +60,41 @@
           <h2> </h2>
           
         </div>
-        <div class="col-lg-5 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        <div class="col-lg-4 order-1 order-lg-2 hero-img">
+          <form action="custom_form.php" class="d-flex  justify-content-center py-3 bg-white  px-3 rounded-5 animated " id="lead_form" onsubmit="emailPassage()" method="POST">
+            <div class="row g-3 pt-2  justify-content-center ">
+                  <h3 class="text-dark pb-3 text-center">Register Now !</h3>
+                    <div class="col-lg-12 col-11">
+                        <input class="form-control bg-white border  border-bottom border-secondary " type="name" name="name" id="name"
+                            title="Please Enter Your Name" placeholder="Your Name" required
+                             style="height: 55px; border-width: 0px 0px 2px 0px !important;border-style: outset;">
+                    </div>
+                    <div class="col-lg-12 col-11">
+                        <input class="form-control bg-white border  border-bottom border-secondary " type="email" name="email" id="email"
+                            placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                            title="Please Correct Email Id"
+                             style="height: 55px; border-width: 0px 0px 2px 0px !important;border-style: outset;">
+                    </div>
+                    <div class="col-lg-12 col-11">
+                        <input class="form-control bg-white border  border-bottom border-secondary " type="tel" name="contact" id="contact"
+                            placeholder="Mobile Number" maxlength="10" pattern="[6-9]{1}[0-9]{9}" title="Please
+                            Enter 10 Digit Number"
+                             style="height: 55px; border-width: 0px 0px 2px 0px !important;border-style: outset;"
+                            required>
+                    </div>
+                    <input type="hidden" name="body" id="body" value="Check test">
+                    <input type="hidden" name="service-code" id="service-code" value="001" id="tradelicense-dubai">
+                    <input type="hidden" name="title" value="tradelicense-dubai">
+                    <input type="hidden" name="redirect">
+                    <input type="hidden" name="analytics" id="analytics2" />
+                    
+                    <div class="col-12">
+                        <button class="btn blue-brd-btn text-white border border-2 w-100 py-3"
+                            style="border-style: ridge !important; background: #131149;" type="submit">Book Appointment</button>
+                    </div>
+                </div>
+            <script src="mail/mail.js"></script>
+        </form>
         </div>
       </div>
     </div>
@@ -104,7 +139,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3 class="fw-bold ms-sm-4">Benefits to getting a business license in Dubai</h3>
+              <h3 class="fw-bold ms-sm-4 text-capitalize">Benefits to getting a business license in Dubai</h3>
             </div>
 
             <div class="ps-md-5 ms-md-5 fs-5">
@@ -140,7 +175,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3 class="fw-bold ms-md-5 mt-lg-0 mt-5">Documents Required for Trade License in Dubai</h3>
+              <h3 class="fw-bold ms-md-5 mt-lg-0 mt-5 text-capitalize">Documents Required for Trade License in Dubai</h3>
             </div>
 
             <div class="ps-md-5 ms-md-5 fs-5">
@@ -164,7 +199,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Types of trade licenses </h2>
+          <h2 class="text-capitalize">Types of trade licenses </h2>
           <p></p>
         </div>
 
@@ -211,7 +246,7 @@
       <div class="container" data-aos="zoom-in">
         <div class="row">
           <div class="col-lg-12 text-center ">
-            <h1 class="text-center text-white">How to obtain a business license in Dubai</h3>
+            <h1 class="text-center text-white text-capitalize">How to obtain a business license in Dubai</h3>
             <div class="row gx-5 mt-lg-5">
               <div class="col-xl-3  col-10 mx-auto  mx-xl-5 rounded-4   col-sm-5 d-flex bg-white text-dark align-items-stretch justify-content-center mt-4">
                 <div class="icon-box">
@@ -270,7 +305,7 @@
       <div class="container py-3">
         <div class="row">
            <div class="section-title py-3">
-              <h2>Ties to numerous  agencies</h1>
+              <h2 class="text-capitalize">Ties to numerous  agencies</h1>
               <p class="mx-3">Department of Economic Development (DED) and other government authorities are connected to us in Dubai in order to obtain speedy approval for a seamless procedure of obtaining a business license in Dubai for our clients.</h3>
            </div>
             <!-- Vendor Start -->
@@ -325,7 +360,7 @@
         <div class="container py-5 pt-0 ">
             <div class="section-title text-center position-relative mb-2
                     mx-auto">
-                <h2 >Why Choose Whiteworth</h1><br>
+                <h2  class="text-capitalize">Why Choose Whiteworth</h1><br>
             </div>
             <div class="container-fluid w-100 py-1  ">
                 <div class=" row justify-content-center g-5">
@@ -360,7 +395,7 @@
         <div class="row  ">
             <div class="col-md-6 mx-auto px-4 my-4">
                 <div class="wow section-title fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="pt-0 mt-0">Get in touch with us</h2>
+                    <h2 class="pt-0 mt-0 text-capitalize">Get in touch with us</h2>
                     <p class="mb-4 text-dark">Still have concerns about starting a business in Dubai.
                         In order to help you, we are here with our skilled personnel.
                     </p>
@@ -464,9 +499,9 @@
                             </a>
                         </div>
                         <div class="d-flex mb-2">
-                            <a href="tel:+971585606800">
+                            <a href="tel:+919999290149">
                                 <p class="mb-0 text-decoration-none text-white"><i
-                                        class="fa fa-phone-volume mt-1 text-primary me-2"></i>+971585606800</p>
+                                        class="fa fa-phone-volume mt-1 text-primary me-2"></i>9999290149</p>
                             </a>
                         </div>
                           <div class="d-flex mt-4">
