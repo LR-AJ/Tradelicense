@@ -86,7 +86,7 @@
                     <input type="hidden" name="service-code" id="service-code" value="001" id="tradelicense-dubai">
                     <input type="hidden" name="title" value="tradelicense-dubai">
                     <input type="hidden" name="redirect">
-                    <input type="hidden" name="analytics" id="analytics2" />
+                    <input type="hidden" name="analytics" id="analytics1" />
                     
                     <div class="col-12">
                         <button class="btn blue-brd-btn text-white border border-2 w-100 py-3"
@@ -556,6 +556,10 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+      document.getElementById("analytics1").value = window.location.href;
+        document.getElementById("analytics2").value = window.location.href;
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
